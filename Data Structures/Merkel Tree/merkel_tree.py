@@ -60,7 +60,7 @@ class MerkleTree:
                 self.tree[i][node_index] = hash_data(
                     self.tree[i - 1][sibling_index * 2] + self.tree[i - 1][node_index * 2]
                 )
-  def main():
+def main():
     # Create some leaf nodes
     leaf_nodes = ['data1', 'data2', 'data3', 'data4']
     hashed_leaf_nodes = [hash_data(leaf) for leaf in leaf_nodes]
@@ -95,5 +95,5 @@ class MerkleTree:
     
     print("All tests passed!")
 
-if __name__=='__main__":
+if __name__ == "__main__":
   main()
